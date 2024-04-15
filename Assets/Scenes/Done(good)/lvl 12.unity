@@ -67,9 +67,6 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
-    m_FinalGather: 0
-    m_FinalGatherFiltering: 1
-    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 1
@@ -671,8 +668,8 @@ Transform:
   m_GameObject: {fileID: 1004674466}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -61.64, y: 8.47, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 13, y: 0, z: -9}
+  m_LocalScale: {x: 0.010915598, y: 0.008326638, z: 0.01038071}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1516,6 +1513,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d6f72d10a404314b8160d96ca0cff72, type: 3}
+--- !u!1001 &3129034400806662189
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2702909318494464689, guid: b8ee9bd15a525484da73ea2b378b206a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2702909318494464689, guid: b8ee9bd15a525484da73ea2b378b206a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2702909318494464689, guid: b8ee9bd15a525484da73ea2b378b206a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2702909318494464689, guid: b8ee9bd15a525484da73ea2b378b206a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2702909318494464689, guid: b8ee9bd15a525484da73ea2b378b206a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2702909318494464689, guid: b8ee9bd15a525484da73ea2b378b206a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2702909318494464689, guid: b8ee9bd15a525484da73ea2b378b206a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2702909318494464689, guid: b8ee9bd15a525484da73ea2b378b206a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2702909318494464689, guid: b8ee9bd15a525484da73ea2b378b206a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2702909318494464689, guid: b8ee9bd15a525484da73ea2b378b206a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4426536222812299773, guid: b8ee9bd15a525484da73ea2b378b206a, type: 3}
+      propertyPath: m_Name
+      value: GameObject (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b8ee9bd15a525484da73ea2b378b206a, type: 3}
 --- !u!1001 &3439838246124083499
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1800,6 +1854,18 @@ PrefabInstance:
     - target: {fileID: 2852777235312271931, guid: 6f360db95c430f04baa9473ca8148a29, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3139380133138425066, guid: 6f360db95c430f04baa9473ca8148a29, type: 3}
+      propertyPath: changecolor.b
+      value: 0.6431373
+      objectReference: {fileID: 0}
+    - target: {fileID: 3139380133138425066, guid: 6f360db95c430f04baa9473ca8148a29, type: 3}
+      propertyPath: changecolor.g
+      value: 0.36078432
+      objectReference: {fileID: 0}
+    - target: {fileID: 3139380133138425066, guid: 6f360db95c430f04baa9473ca8148a29, type: 3}
+      propertyPath: changecolor.r
+      value: 0.5647059
       objectReference: {fileID: 0}
     - target: {fileID: 5122661583925556519, guid: 6f360db95c430f04baa9473ca8148a29, type: 3}
       propertyPath: m_Name
@@ -2136,3 +2202,4 @@ SceneRoots:
   - {fileID: 1147902791}
   - {fileID: 813927210}
   - {fileID: 1004674468}
+  - {fileID: 3129034400806662189}
