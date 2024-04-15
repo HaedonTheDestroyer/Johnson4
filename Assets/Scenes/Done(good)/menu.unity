@@ -67,9 +67,6 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
-    m_FinalGather: 0
-    m_FinalGatherFiltering: 1
-    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 1
@@ -623,7 +620,7 @@ MonoBehaviour:
   - {fileID: 327055163}
   - {fileID: 26469312}
   - {fileID: 1260839186}
-  unlockedLevels: 0
+  unlockedLevels: 2
   gameon: 1
 --- !u!1 &211331386
 GameObject:
