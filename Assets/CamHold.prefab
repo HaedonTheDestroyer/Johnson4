@@ -9842,9 +9842,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   l: {fileID: 430857258261455985}
-  s: {r: 0.9811321, g: 0.67096907, b: 0.16197933, a: 0}
-  t: {r: 1, g: 0.97647065, b: 0.54901963, a: 0}
-  returnspeed: 2
+  s: {r: 0.9811321, g: 0.8531208, b: 0.32858673, a: 0}
+  t: {r: 0.57835853, g: 0.3224012, b: 0.6509434, a: 0}
+  returnspeed: 1.8
 --- !u!114 &5156230115401144033
 MonoBehaviour:
   m_ObjectHideFlags: 0
