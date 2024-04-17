@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.Escape))
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene("level select");
         }
         if (playerHealth <= 0&&!gameEnd) {
             a.enabled = false;
