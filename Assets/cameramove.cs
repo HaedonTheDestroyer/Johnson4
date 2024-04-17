@@ -24,9 +24,10 @@ public class cameramove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float sens = PlayerPrefs.GetFloat("sens");
         //should be "mouse X"
-        float x=Input.GetAxisRaw("Mouse X")*Time.deltaTime*xsens;
-        float y=Input.GetAxisRaw("Mouse Y")*Time.deltaTime*ysens;
+        float x=Input.GetAxisRaw("Mouse X")*Time.deltaTime*xsens * (sens == 0 ? 1 : sens);
+        float y=Input.GetAxisRaw("Mouse Y")*Time.deltaTime*ysens * (sens == 0 ? 1 : sens);
         yRotation += x;
         xRotation -= y;
         xRotation=Mathf.Clamp(xRotation, -90, 90);

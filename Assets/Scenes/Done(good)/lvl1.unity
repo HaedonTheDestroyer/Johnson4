@@ -67,9 +67,6 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
-    m_FinalGather: 0
-    m_FinalGatherFiltering: 1
-    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 1
@@ -1090,6 +1087,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 4830447004027110579}
+    - target: {fileID: 6664332319524820086, guid: 8840f8f22b09fcc4abe75ea0c841faeb, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7725313361511240235, guid: 8840f8f22b09fcc4abe75ea0c841faeb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
