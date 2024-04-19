@@ -620,7 +620,11 @@ MonoBehaviour:
   - {fileID: 327055163}
   - {fileID: 26469312}
   - {fileID: 1260839186}
+<<<<<<< HEAD:Assets/Scenes/LSELECT.unity
   unlockedLevels: 2
+=======
+  unlockedLevels: 0
+>>>>>>> kaicenat2:Assets/Scenes/Done(good)/menu.unity
   gameon: 0
 --- !u!1 &211331386
 GameObject:

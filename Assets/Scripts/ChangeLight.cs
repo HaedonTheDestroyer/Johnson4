@@ -7,10 +7,15 @@ public class ChangeLight : MonoBehaviour
     public Light l;
     public float returnspeed;
     public Color defaultcolor;
+    public Color changecolor;
+    public bool changer;
+    public int intensity;
     // Start is called before the first frame update
     public void bang()
     {
-        l.intensity = 4;
+        l.intensity = intensity;
+        if ( changer )
+        l.color = changecolor;
        
     }
     void Update()
