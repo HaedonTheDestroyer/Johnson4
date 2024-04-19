@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-/*public class ScrollingText : MonoBehaviour
+public class ScrollingText : MonoBehaviour
 {
     [TextArea][SerializeField] private string[] iteminfo;
     [SerializeField] private Color[] colors;
@@ -15,7 +15,7 @@ using TMPro;
     
     public void ActivateText()
     {
-        //StartCoroutine(AnimateText());
+        StartCoroutine(AnimateText());
         
     }
     IEnumerator AnimateText()
@@ -30,4 +30,4 @@ using TMPro;
         currentDisplayingText++;
     }
     
-}*/
+}
