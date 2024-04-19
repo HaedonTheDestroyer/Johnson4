@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class cuts : MonoBehaviour
 {
@@ -23,7 +24,7 @@ public class cuts : MonoBehaviour
         Invoke("go", 15);
       
         Invoke("go", 18);
-      
+        Invoke("nexter", 23);
 
     }
 
@@ -31,5 +32,9 @@ public class cuts : MonoBehaviour
     public void go()
     {
         g.GetComponent<ScrollingText>().ActivateText();
+    }
+    public void nexter()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
