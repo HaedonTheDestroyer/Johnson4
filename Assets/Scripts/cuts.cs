@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
-/*public class cuts : MonoBehaviour
+public class cuts : MonoBehaviour
 {
     public TextMeshProUGUI itemInfoText;
     public GameObject g;
@@ -38,4 +38,3 @@ using UnityEngine.SceneManagement;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
-*/
