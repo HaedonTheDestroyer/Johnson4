@@ -45,7 +45,14 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 8.unity
     guid: 786fe56b10d08da4f96cc1562aa7e92e
   - enabled: 1
+<<<<<<< HEAD
+    path: Assets/Scenes/cutscene.unity
+    guid: 29fb9a7a0ade41f40ac98f4a0c0f9368
+  - enabled: 1
+    path: Assets/Scenes/Done(good)/lvl 9.unity
+=======
     path: Assets/Scenes/Level 9.unity
+>>>>>>> c175f108517b9b8a33e2a8064c6ff8f714ce7781
     guid: f8f5a98910989cd429536286a9bd247e
   - enabled: 1
     path: Assets/Scenes/Level 10.unity
