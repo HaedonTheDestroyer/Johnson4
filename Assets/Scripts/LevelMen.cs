@@ -11,7 +11,7 @@ public class LevelMen : MonoBehaviour
     public bool gameon;
     public void open(int ind)
     {
-        SceneManager.LoadScene(ind + 2);
+        SceneManager.LoadScene(ind);
     }
 
     public void Awake()
