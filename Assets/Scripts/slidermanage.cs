@@ -7,8 +7,7 @@ using UnityEngine.UI;
 
 public class slidermanage : MonoBehaviour
 {
-    public AudioMixer SoundEffectsMixer;
-    public AudioMixer MusicMixer;
+    public AudioMixer mixer;
     public Slider musicslider;
     public Slider soundslider;
     public Slider sensslider;
@@ -30,19 +29,21 @@ public class slidermanage : MonoBehaviour
     public void SetSoundEffectsVolume(float volume)
     {
         PlayerPrefs.SetFloat("soundvol", volume);
-        SoundEffectsMixer.SetFloat("SoundEffectsVolume", Mathf.Log10(volume) * 20);
+        mixer.SetFloat("SoundVolume", Mathf.Log10(volume) * 20);
+        Debug.Log("sound " + PlayerPrefs.GetFloat("soundvol"));
     }
 
     public void SetMusicVolume(float volume)
     {
         PlayerPrefs.SetFloat("musicvol", volume);
-        MusicMixer.SetFloat("MusicVolume", Mathf.Log10(volume) * 20);
+        mixer.SetFloat("MusicVolume", Mathf.Log10(volume) * 20);
+        Debug.Log("music " + PlayerPrefs.GetFloat("musicvol"));
     }
 
     public void SetSensitivity(float sensitivity)
     {
         PlayerPrefs.SetFloat("sens", sensitivity);
-        Debug.Log(PlayerPrefs.GetFloat("sens"));
+        Debug.Log("sens " + PlayerPrefs.GetFloat("sens"));
     }
 
 }

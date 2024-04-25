@@ -7,7 +7,6 @@ public class deli : MonoBehaviour
 {
     // Start is called before the first frame update
     public Beat beater;
-    bool e1;
     public int length;
     void Start()
     {
@@ -17,7 +16,6 @@ public class deli : MonoBehaviour
     {
         if (GameObject.FindGameObjectWithTag("Enemy") == null)
         {
-            e1 = true;
             beater.randomon();
             beater.spawnend = Time.timeSinceLevelLoad + length;
         }
