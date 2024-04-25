@@ -17,15 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 1 (Tutorial).unity
     guid: 36c4e1679d17eb44ab957e2103de6e97
-<<<<<<< HEAD
   - enabled: 1
     path: Assets/Scenes/Level 2 (Tutorial).unity
     guid: d8cbcf6cfa65ac244bbe37fd6d1bc036
-=======
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
->>>>>>> kaicenat2
   - enabled: 1
     path: Assets/Scenes/Level 3 (Tutorial).unity
     guid: 3b4850b969384b84cbf749cd86621598
@@ -44,6 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 8.unity
     guid: 786fe56b10d08da4f96cc1562aa7e92e
+  - enabled: 1
+    path: Assets/Scenes/cutscene.unity
+    guid: 29fb9a7a0ade41f40ac98f4a0c0f9368
   - enabled: 1
     path: Assets/Scenes/Level 9.unity
     guid: f8f5a98910989cd429536286a9bd247e
@@ -68,8 +65,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 16.unity
     guid: e12cf905a402bd242b4f4790abfd5adc
-  - enabled: 1
-    path: Assets/Scenes/lvl!.unity
-    guid: 4b3851b6175c49c4a95db7d489f9bb65
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
