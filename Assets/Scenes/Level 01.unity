@@ -325,7 +325,7 @@ AudioSource:
   m_GameObject: {fileID: 115497936}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -4744456975158743624, guid: 5faa208cb67afd046aefaf735b42ad02, type: 2}
   m_audioClip: {fileID: 8300000, guid: bdf6bb3d5dc19e3409ad9d99f4d9d9bf, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -919,6 +919,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8614405757467486394, guid: ce9ee5ade707ef34096843a116f683b2, type: 3}
+      propertyPath: meshon
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 653638045620752134, guid: ce9ee5ade707ef34096843a116f683b2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -16.8
@@ -1662,7 +1666,7 @@ AudioSource:
   m_GameObject: {fileID: 1751982691}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -4744456975158743624, guid: 5faa208cb67afd046aefaf735b42ad02, type: 2}
   m_audioClip: {fileID: 8300000, guid: f83b19c4493b7404680a83f73710c0e9, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -2477,6 +2481,10 @@ PrefabInstance:
       propertyPath: airm
       value: 0.1
       objectReference: {fileID: 0}
+    - target: {fileID: 8830962822692097696, guid: 1d6f72d10a404314b8160d96ca0cff72, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -4744456975158743624, guid: 5faa208cb67afd046aefaf735b42ad02, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2639,6 +2647,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1315134980}
+    - target: {fileID: 6664332319524820086, guid: 8840f8f22b09fcc4abe75ea0c841faeb, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -4744456975158743624, guid: 5faa208cb67afd046aefaf735b42ad02, type: 2}
     - target: {fileID: 7725313361511240235, guid: 8840f8f22b09fcc4abe75ea0c841faeb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0

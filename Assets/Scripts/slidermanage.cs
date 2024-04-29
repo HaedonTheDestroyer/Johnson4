@@ -14,12 +14,12 @@ public class slidermanage : MonoBehaviour
 
     void Start()
     {
-        if (PlayerPrefs.GetInt("bitch") != 1)
+        if (PlayerPrefs.GetInt("a") != 1)
         {
             PlayerPrefs.SetFloat("musicvol", 1);
             PlayerPrefs.SetFloat("soundvol", 1);
             PlayerPrefs.SetFloat("sens", 1);
-            PlayerPrefs.SetInt("bitch", 1);
+            PlayerPrefs.SetInt("a", 1);
         }
         musicslider.value = PlayerPrefs.GetFloat("musicvol");
         soundslider.value = PlayerPrefs.GetFloat("soundvol");
@@ -30,20 +30,17 @@ public class slidermanage : MonoBehaviour
     {
         PlayerPrefs.SetFloat("soundvol", volume);
         mixer.SetFloat("SoundVolume", Mathf.Log10(volume) * 20);
-        Debug.Log("sound " + PlayerPrefs.GetFloat("soundvol"));
     }
 
     public void SetMusicVolume(float volume)
     {
         PlayerPrefs.SetFloat("musicvol", volume);
         mixer.SetFloat("MusicVolume", Mathf.Log10(volume) * 20);
-        Debug.Log("music " + PlayerPrefs.GetFloat("musicvol"));
     }
 
     public void SetSensitivity(float sensitivity)
     {
         PlayerPrefs.SetFloat("sens", sensitivity);
-        Debug.Log("sens " + PlayerPrefs.GetFloat("sens"));
     }
 
 }
