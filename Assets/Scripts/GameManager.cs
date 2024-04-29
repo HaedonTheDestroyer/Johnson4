@@ -43,6 +43,10 @@ public class GameManager : MonoBehaviour
         {
             SceneManager.LoadScene("level select");
         }
+        if (Input.GetKey(KeyCode.R))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
         if (playerHealth <= 0&&!gameEnd) {
             a.enabled = false;
             l.SetActive(false);
@@ -51,7 +55,7 @@ public class GameManager : MonoBehaviour
             Invoke("endGame", 2);
         
         }
-        if (player.transform.position.y<-20&&!gameEnd)
+        /*if (player.transform.position.y<-20&&!gameEnd)
         {
             a.enabled = false;
             l.SetActive(false) ;
@@ -59,6 +63,6 @@ public class GameManager : MonoBehaviour
             m.enabled = false;
             Invoke("endGame", .5f);
 
-        }
+        }*/
     }
 }
