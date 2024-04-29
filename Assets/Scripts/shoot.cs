@@ -48,10 +48,10 @@ public class shoot : MonoBehaviour
             
             if (shotgun)
             {
-                theFarter3.Play();
-                grah.SetActive(true);
+               // theFarter3.Play();
+                //grah.SetActive(true);
                 lightc.color = Color.black;
-                Invoke("resetgrah", .5f);
+                //Invoke("resetgrah", .5f);
             }
             else
             {
