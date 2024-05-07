@@ -8,13 +8,13 @@ public class endblock : MonoBehaviour
     bool e1, e2;
     public bool unlcokcer = true;
     public bool fart;
+    private MeshRenderer meshRenderer;
+    public bool math;
     // Start is called before the first frame update
     void Start()
     {
-        
-        
-            gameObject.GetComponent<MeshRenderer>().enabled = false;
-        
+        meshRenderer = gameObject.GetComponent<MeshRenderer>();
+        meshRenderer.enabled = false;
     }
 
     // Update is called once per frame
@@ -28,23 +28,31 @@ public class endblock : MonoBehaviour
             {
                 if (Time.timeSinceLevelLoad > 30)
                 {
-                    gameObject.GetComponent<MeshRenderer>().enabled = true;
+                    meshRenderer.enabled = true;
                 }
                 else
                 {
-                    gameObject.GetComponent<MeshRenderer>().enabled = false;
+                    meshRenderer.enabled = false;
                 }
             }
             else
             {
-                gameObject.GetComponent<MeshRenderer>().enabled = true;
+                if (!math)
+                {
+                    meshRenderer.enabled = true;
+                }
+                else
+                {
+                    //check for math being done later
+                    meshRenderer.enabled = false;
+                }
             }
 
         }
         else
         {
             
-                gameObject.GetComponent<MeshRenderer>().enabled = false;
+                meshRenderer.enabled = false;
             
         }
     }

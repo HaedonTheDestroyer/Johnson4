@@ -25,9 +25,8 @@ public class shoot : MonoBehaviour
     public AudioSource theFarter4;
     Light lightc;
     public bool bikini;
-
-    
-        
+    private bool ableToShotgun;
+    public bool math;
      
     // Start is called before the first frame update
     void Start()
@@ -38,11 +37,16 @@ public class shoot : MonoBehaviour
         cam = GameObject.Find("Main Camera");
         player = GameObject.Find("player");
         rb = player.GetComponent<Rigidbody>();
+        ableToShotgun = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (BigManager.instance.paused)
+        {
+            return;
+        }
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             
@@ -59,14 +63,24 @@ public class shoot : MonoBehaviour
             }
              
         }
-        if (Input.GetKeyDown(KeyCode.Mouse1))
+        if (Input.GetKeyDown(KeyCode.Mouse1) && !math)
         {
-            if (shotgun)
+            if (shotgun && ableToShotgun)
             {
                 shoot1();
             }
             else
             {
+                if (ableToShotgun)
+                {
+                    ableToShotgun = false;
+                    Invoke(nameof(ResetShotgun), 0.5f);
+                }
+                else
+                {
+                    CancelInvoke(nameof(ResetShotgun));
+                    Invoke(nameof(ResetShotgun), 0.5f);
+                }
                 theFarter4.Play();
                 grah.SetActive(true);
                 lightc.color=Color.black;
@@ -77,6 +91,10 @@ public class shoot : MonoBehaviour
 
 
 
+    }
+    private void ResetShotgun()
+    {
+        ableToShotgun = true;
     }
     void resetgrah()
     {
@@ -114,7 +132,7 @@ public class shoot : MonoBehaviour
     {
         if (shotgun&&!hasshot)
         {
-            Debug.Log("shotgun shit");
+            //Debug.Log("shotgun shit");
             shot2.Play();
             if (mf2!=null)
                 mf2.Play();
@@ -129,7 +147,7 @@ public class shoot : MonoBehaviour
                 Vector3 mainvec = - ((cam.transform.rotation * Vector3.back).normalized);
                 rb.AddForce(new Vector3(mainvec.x,0,mainvec.z)*shotmult, ForceMode.Impulse);
             }
-            Debug.Log("shotgun shit2");
+            //Debug.Log("shotgun shit2");
             hasshot = true;
             shotgun=false;
         }else if (canshoot&&!shotgun){
@@ -143,12 +161,12 @@ public class shoot : MonoBehaviour
             ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit))
             {
-                Debug.Log(hit.transform);
+                //Debug.Log(hit.transform);
                 
                 Target t = hit.transform.GetComponent<Target>();
                 if (t != null)
                 {
-                    Debug.Log("johnhit1");
+                    //Debug.Log("johnhit1");
                     t.Invoke("getHit", .1f);
                 }
                 //print(hit.collider.name);
