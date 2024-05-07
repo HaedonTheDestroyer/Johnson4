@@ -11,7 +11,7 @@ public class spawn : MonoBehaviour
     public GameObject player;
     public Beat beater;
     public endblock endBlock;
-    
+    public float tim;
 
     bool dropo;
     public float dropspeed;
@@ -21,7 +21,7 @@ public class spawn : MonoBehaviour
         beater.spawnend = 100;
         beater.spawntime = 19;
         dropo = true;
-        Invoke("spawner", 19);
+        Invoke("spawner", tim);
         //player.GetComponent<Rigidbody>().AddForce(0, -600, 0, ForceMode.Impulse);
         Invoke("dropper", 7);
         

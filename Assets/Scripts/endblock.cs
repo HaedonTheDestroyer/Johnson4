@@ -7,6 +7,7 @@ public class endblock : MonoBehaviour
 {
     bool e1, e2;
     public bool unlcokcer = true;
+    public bool maze;
     public bool fart;
     // Start is called before the first frame update
     void Start()
@@ -20,32 +21,38 @@ public class endblock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        e1=GameObject.FindGameObjectWithTag("Enemy")==null;
-        //e2= GameObject.FindGameObjectWithTag("IceCube") == null;
-        if(e1)
+        if (!maze)
         {
-            if (fart)
+            e1 = GameObject.FindGameObjectWithTag("Enemy") == null;
+            //e2= GameObject.FindGameObjectWithTag("IceCube") == null;
+            if (e1)
             {
-                if (Time.timeSinceLevelLoad > 30)
+                if (fart)
                 {
-                    gameObject.GetComponent<MeshRenderer>().enabled = true;
+                    if (Time.timeSinceLevelLoad > 30)
+                    {
+                        gameObject.GetComponent<MeshRenderer>().enabled = true;
+                    }
+                    else
+                    {
+                        gameObject.GetComponent<MeshRenderer>().enabled = false;
+                    }
                 }
                 else
                 {
-                    gameObject.GetComponent<MeshRenderer>().enabled = false;
+                    gameObject.GetComponent<MeshRenderer>().enabled = true;
                 }
+
             }
             else
             {
-                gameObject.GetComponent<MeshRenderer>().enabled = true;
-            }
 
-        }
-        else
-        {
-            
                 gameObject.GetComponent<MeshRenderer>().enabled = false;
-            
+
+            }
+        }
+        else{
+            gameObject.GetComponent<MeshRenderer>().enabled = true;
         }
     }
     private void OnCollisionEnter(Collision collision)
