@@ -14,7 +14,6 @@ public class MathButton : MonoBehaviour
     public GameObject incorrectText;
     public GameObject correctText;
     public string answer;
-    private bool answered;
     public int questionNumber;
 
     public TMP_InputField inputField;
@@ -29,7 +28,9 @@ public class MathButton : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-        if (answered)
+        incorrectText.SetActive(false);
+
+        if (QuestionManager.questions[questionNumber - 1])
         {
             return;
         }
@@ -65,7 +66,6 @@ public class MathButton : MonoBehaviour
         gameUI.SetActive(true);
         question.SetActive(false);
 
-        answered = true;
         bool correct = ans == answer;
 
         if(correct)
