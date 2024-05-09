@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -8,19 +9,15 @@ public class PauseMenu : MonoBehaviour
     public GameObject PauseUI;
     public GameObject GameUI;
     public GameObject QuestionUI;
+    public GameObject SettingsUI;
 
-    public AudioSource audioSource1;
-    public AudioSource audioSource2;
-    public AudioSource audioSource3;
-    public AudioSource audioSource4;
-    public AudioSource audioSource5;
-    public AudioSource audioSource6;
+    public AudioSource[] audioSources;
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (BigManager.instance.paused)
+            if (BigManager.instance.paused && !BigManager.instance.answering)
             {
                 Resume();
             }
@@ -31,17 +28,80 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
-    private void Resume()
+    public void Settings()
     {
-
+        PauseUI.SetActive(false);
+        SettingsUI.SetActive(true);
     }
 
-    private void Pause()
+    public void Back()
+    {
+        SettingsUI.SetActive(false);
+        PauseUI.SetActive(true);
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
+    public void LevelSelect()
+    {
+        SceneManager.LoadScene("Level Select");
+    }
+
+    public void Resume()
+    {
+        PauseUI.SetActive(false);
+
+        if (BigManager.instance.answering)
+        {
+            QuestionUI.SetActive(true);
+            return;
+        }
+
+        GameUI.SetActive(true);
+
+        BigManager.instance.paused = false;
+
+        Time.timeScale = 1f;
+
+        foreach (AudioSource audioSource in audioSources)
+        {
+            if (audioSource.gameObject.activeInHierarchy)
+            {
+                audioSource.UnPause();
+            }
+        }
+
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    public void Pause()
     {
         BigManager.instance.paused = true;
 
         Time.timeScale = 0f;
 
+        foreach (AudioSource audioSource in audioSources)
+        {
+            if (audioSource.gameObject.activeInHierarchy)
+            {
+                audioSource.Pause();
+            }
+        }
 
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+
+        GameUI.SetActive(false);
+
+        if (BigManager.instance.answering)
+        {
+            QuestionUI.SetActive(false);
+        }
+
+        PauseUI.SetActive(true);
     }
 }
