@@ -27,7 +27,6 @@ public class MathButton : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-
         incorrectText.SetActive(false);
 
         if (QuestionManager.questions[questionNumber - 1])
@@ -45,6 +44,7 @@ public class MathButton : MonoBehaviour
 
         Time.timeScale = 0f;
 
+        BigManager.instance.answering = true;
         BigManager.instance.paused = true;
     }
 
@@ -57,8 +57,9 @@ public class MathButton : MonoBehaviour
         Time.timeScale = 1.0f;
 
         BigManager.instance.paused = false;
+        BigManager.instance.answering = false;
 
-        audioSource.Play();
+        audioSource.UnPause();
 
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
@@ -68,7 +69,7 @@ public class MathButton : MonoBehaviour
 
         bool correct = ans == answer;
 
-        if(correct)
+        if (correct)
         {
             meshRenderer.material.color = new Color32(0, 255, 0, 255);
         }
@@ -85,7 +86,6 @@ public class MathButton : MonoBehaviour
             correctText.SetActive(true);
             Invoke(nameof(LoadNext), 1f);
         }
-
     }
 
     private void sunfish()
