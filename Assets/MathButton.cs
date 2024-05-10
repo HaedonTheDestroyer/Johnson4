@@ -50,6 +50,12 @@ public class MathButton : MonoBehaviour
 
     public void QuestionAnswered()
     {
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            return;
+        }
+
         string ans = inputField.text.ToString().ToUpper();
 
         inputField.text = "";

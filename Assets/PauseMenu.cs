@@ -17,7 +17,13 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            if (BigManager.instance.paused && !BigManager.instance.answering)
+
+            if (BigManager.instance.answering)
+            {
+                return;
+            }
+
+            if (BigManager.instance.paused)
             {
                 Resume();
             }
@@ -47,20 +53,15 @@ public class PauseMenu : MonoBehaviour
 
     public void LevelSelect()
     {
+        Resume();
         SceneManager.LoadScene("Level Select");
     }
 
     public void Resume()
     {
         PauseUI.SetActive(false);
-
-        if (BigManager.instance.answering)
-        {
-            QuestionUI.SetActive(true);
-            return;
-        }
-
         GameUI.SetActive(true);
+        SettingsUI.SetActive(false);
 
         BigManager.instance.paused = false;
 
@@ -96,12 +97,6 @@ public class PauseMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
 
         GameUI.SetActive(false);
-
-        if (BigManager.instance.answering)
-        {
-            QuestionUI.SetActive(false);
-        }
-
         PauseUI.SetActive(true);
     }
 }
