@@ -56,7 +56,7 @@ public class MathButton : MonoBehaviour
             return;
         }
 
-        string ans = inputField.text.ToString().ToUpper();
+        string ans = inputField.text.ToString().ToLower();
 
         inputField.text = "";
 
