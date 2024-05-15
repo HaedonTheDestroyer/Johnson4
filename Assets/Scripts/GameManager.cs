@@ -41,6 +41,10 @@ public class GameManager : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.R))
         {
+            if (BigManager.instance.paused)
+            {
+                return;
+            }
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         if (playerHealth <= 0&&!gameEnd) {
