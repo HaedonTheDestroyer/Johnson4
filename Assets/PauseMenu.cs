@@ -69,6 +69,12 @@ public class PauseMenu : MonoBehaviour
 
         foreach (AudioSource audioSource in audioSources)
         {
+
+            if(audioSource == null)
+            {
+                continue;
+            }
+
             if (audioSource.gameObject.activeInHierarchy)
             {
                 audioSource.UnPause();
@@ -87,6 +93,12 @@ public class PauseMenu : MonoBehaviour
 
         foreach (AudioSource audioSource in audioSources)
         {
+
+            if (audioSource == null)
+            {
+                continue;
+            }
+
             if (audioSource.gameObject.activeInHierarchy)
             {
                 audioSource.Pause();
