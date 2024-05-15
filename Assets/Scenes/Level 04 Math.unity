@@ -2377,16 +2377,15 @@ PrefabInstance:
       objectReference: {fileID: 859218181}
     - target: {fileID: 759282636660445258, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
       propertyPath: m_text
-      value: Use the tangent line to approximate 3.1 (round to the nearest tenth
-        and include zero before the decimal if necessary)
+      value: Use the tangent line to approximate 3.1
       objectReference: {fileID: 0}
     - target: {fileID: 759282636660445258, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
       propertyPath: m_fontSize
-      value: 24
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 759282636660445258, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
       propertyPath: m_fontSizeBase
-      value: 24
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 854341877847135171, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
       propertyPath: m_Name
@@ -2402,15 +2401,15 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 557321e8c2fbbfd41ab92a31a6dc6f8f, type: 3}
     - target: {fileID: 2111225664606646506, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
       propertyPath: m_text
-      value: Answer a (no spaces) in the form y - y1 = m(x - x1)
+      value: Answer a in the form y - y1 = m(x - x1)
       objectReference: {fileID: 0}
     - target: {fileID: 2111225664606646506, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
       propertyPath: m_fontSize
-      value: 24
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 2111225664606646506, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
       propertyPath: m_fontSizeBase
-      value: 24
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 3864685576934728417, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
       propertyPath: 'audioSources.Array.data[0]'
@@ -2554,24 +2553,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8305849649688008654, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
       propertyPath: m_fontSize
-      value: 24
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 8305849649688008654, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
       propertyPath: m_fontSizeBase
-      value: 24
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 8796044830170341022, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
       propertyPath: m_text
-      value: Answer b (round to the nearest tenth and include zero before the decimal
-        if necessary)
+      value: Answer b
       objectReference: {fileID: 0}
     - target: {fileID: 8796044830170341022, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
       propertyPath: m_fontSize
-      value: 24
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 8796044830170341022, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
       propertyPath: m_fontSizeBase
-      value: 24
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 8893091923008550117, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
       propertyPath: m_Sprite

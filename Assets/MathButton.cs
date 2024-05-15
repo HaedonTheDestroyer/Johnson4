@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -58,6 +59,9 @@ public class MathButton : MonoBehaviour
 
         string ans = inputField.text.ToString().ToLower();
 
+        ans = ans.Replace(" ", "");
+        answer = answer.Replace(" ", "");
+
         inputField.text = "";
 
         Time.timeScale = 1.0f;
@@ -73,7 +77,18 @@ public class MathButton : MonoBehaviour
         gameUI.SetActive(true);
         question.SetActive(false);
 
+        double ansnum1;
+        double ansnum2;
+
         bool correct = ans == answer;
+
+        if (double.TryParse(ans, out ansnum1) && double.TryParse(answer, out ansnum2))
+        {
+            if(ansnum1 == ansnum2)
+            {
+                correct = true;
+            }
+        }
 
         if (correct)
         {
