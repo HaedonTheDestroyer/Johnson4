@@ -58,6 +58,7 @@ public class MathButton : MonoBehaviour
         }
 
         string ans = inputField.text.ToString().ToLower();
+        answer = answer.ToLower();
 
         ans = ans.Replace(" ", "");
         answer = answer.Replace(" ", "");
