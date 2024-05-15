@@ -3335,7 +3335,7 @@ PrefabInstance:
     - target: {fileID: 3497534457113685700, guid: 1d6f72d10a404314b8160d96ca0cff72, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 9f2d26215fb09de4b8877b774de06006, type: 3}
+      objectReference: {fileID: 8300000, guid: 4a26ae984290e6842aab26393a1cbe96, type: 3}
     - target: {fileID: 3497534457113685700, guid: 1d6f72d10a404314b8160d96ca0cff72, type: 3}
       propertyPath: OutputAudioMixerGroup
       value: 
@@ -3709,11 +3709,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3246304605000468162, guid: c0d73776f1df9c54cb3d62984f7afc93, type: 3}
       propertyPath: bpm
-      value: 129
+      value: 103
       objectReference: {fileID: 0}
     - target: {fileID: 3246304605000468162, guid: c0d73776f1df9c54cb3d62984f7afc93, type: 3}
       propertyPath: offset
-      value: 0.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3246304605000468162, guid: c0d73776f1df9c54cb3d62984f7afc93, type: 3}
       propertyPath: audioSource
