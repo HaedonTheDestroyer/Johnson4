@@ -1491,7 +1491,7 @@ PrefabInstance:
     - target: {fileID: 3497534457113685700, guid: 1d6f72d10a404314b8160d96ca0cff72, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 4dd0fa823b126c4448c127258f8d9e8e, type: 3}
+      objectReference: {fileID: 8300000, guid: 31082bfeb9d48df41a8bdad4f5840726, type: 3}
     - target: {fileID: 3497534457113685700, guid: 1d6f72d10a404314b8160d96ca0cff72, type: 3}
       propertyPath: OutputAudioMixerGroup
       value: 
@@ -1942,11 +1942,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3246304605000468162, guid: c0d73776f1df9c54cb3d62984f7afc93, type: 3}
       propertyPath: bpm
-      value: 148
+      value: 112
       objectReference: {fileID: 0}
     - target: {fileID: 3246304605000468162, guid: c0d73776f1df9c54cb3d62984f7afc93, type: 3}
       propertyPath: offset
-      value: 0.95
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3246304605000468162, guid: c0d73776f1df9c54cb3d62984f7afc93, type: 3}
       propertyPath: spawnfreq
@@ -1987,6 +1987,14 @@ PrefabInstance:
     - target: {fileID: 3246304605000468162, guid: c0d73776f1df9c54cb3d62984f7afc93, type: 3}
       propertyPath: intervals.Array.data[3].trigger.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: primeshot
+      objectReference: {fileID: 0}
+    - target: {fileID: 5953876816939833588, guid: c0d73776f1df9c54cb3d62984f7afc93, type: 3}
+      propertyPath: Priority
+      value: 176
+      objectReference: {fileID: 0}
+    - target: {fileID: 5953876816939833588, guid: c0d73776f1df9c54cb3d62984f7afc93, type: 3}
+      propertyPath: m_Volume
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5953876816939833588, guid: c0d73776f1df9c54cb3d62984f7afc93, type: 3}
       propertyPath: OutputAudioMixerGroup
