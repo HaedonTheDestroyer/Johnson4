@@ -368,7 +368,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 117008466}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 08b28e126e251ca468e2c6eb684c5f38, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 1d6cfffbea4e2024bb736ddf223790cd, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -1239,7 +1239,7 @@ MonoBehaviour:
   gameUI: {fileID: 1881084275}
   incorrectText: {fileID: 689248056}
   correctText: {fileID: 761365718}
-  answer: yes
+  answer: no
   questionNumber: 4
   inputField: {fileID: 394645848}
   audioSource: {fileID: 1247884837}
@@ -1365,7 +1365,7 @@ MonoBehaviour:
   gameUI: {fileID: 1881084275}
   incorrectText: {fileID: 689248056}
   correctText: {fileID: 761365718}
-  answer: y+1=4(x-3)
+  answer: yes
   questionNumber: 1
   inputField: {fileID: 1449646936}
   audioSource: {fileID: 1247884837}
@@ -1538,7 +1538,7 @@ MonoBehaviour:
   gameUI: {fileID: 1881084275}
   incorrectText: {fileID: 689248056}
   correctText: {fileID: 761365718}
-  answer: -1.4
+  answer: yes
   questionNumber: 2
   inputField: {fileID: 887929688}
   audioSource: {fileID: 1247884837}
@@ -1716,7 +1716,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 6827793156595994659, guid: 44cb5325554c3054baa3f45f633c8480, type: 2}
-  m_audioClip: {fileID: 8300000, guid: d59d5537c09abb54da037249b778ed4f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f732bb69552951741b5e97a3c391b435, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2145,7 +2145,7 @@ MonoBehaviour:
   gameUI: {fileID: 1881084275}
   incorrectText: {fileID: 689248056}
   correctText: {fileID: 761365718}
-  answer: -0.6
+  answer: no
   questionNumber: 3
   inputField: {fileID: 539058146}
   audioSource: {fileID: 1247884837}
@@ -2316,15 +2316,7 @@ PrefabInstance:
       objectReference: {fileID: 859218181}
     - target: {fileID: 759282636660445258, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
       propertyPath: m_text
-      value: Use the tangent line to approximate 3.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 759282636660445258, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
-      propertyPath: m_fontSize
-      value: 36
-      objectReference: {fileID: 0}
-    - target: {fileID: 759282636660445258, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 36
+      value: Does f(x) have a point of inflection at x = 5 (yes/no)?
       objectReference: {fileID: 0}
     - target: {fileID: 854341877847135171, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
       propertyPath: m_Name
@@ -2337,18 +2329,14 @@ PrefabInstance:
     - target: {fileID: 1787326750458702182, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 557321e8c2fbbfd41ab92a31a6dc6f8f, type: 3}
+      objectReference: {fileID: 21300000, guid: df2761809e6117c4cb28527bef919589, type: 3}
     - target: {fileID: 2111225664606646506, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
       propertyPath: m_text
-      value: Answer a in the form y - y1 = m(x - x1)
+      value: Does f(x) have a point of inflection at x = 0 (yes/no)?
       objectReference: {fileID: 0}
-    - target: {fileID: 2111225664606646506, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
-      propertyPath: m_fontSize
-      value: 36
-      objectReference: {fileID: 0}
-    - target: {fileID: 2111225664606646506, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 36
+    - target: {fileID: 3195526186143848940, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3864685576934728417, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
       propertyPath: 'audioSources.Array.data[0]'
@@ -2470,6 +2458,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5826937075637855247, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6265325907966013210, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
       propertyPath: m_OnEndEdit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2477,43 +2469,31 @@ PrefabInstance:
     - target: {fileID: 6308188092179414931, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 557321e8c2fbbfd41ab92a31a6dc6f8f, type: 3}
+      objectReference: {fileID: 21300000, guid: df2761809e6117c4cb28527bef919589, type: 3}
     - target: {fileID: 6673506764794961048, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 557321e8c2fbbfd41ab92a31a6dc6f8f, type: 3}
+      objectReference: {fileID: 21300000, guid: df2761809e6117c4cb28527bef919589, type: 3}
     - target: {fileID: 8259138034865049683, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 3769476287016834459}
     - target: {fileID: 8305849649688008654, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
       propertyPath: m_text
-      value: Is the approximation for f(2.9) greater (yes/no)?
+      value: Is the graph of f(x) concave up at x = 5 (yes/no)?
       objectReference: {fileID: 0}
-    - target: {fileID: 8305849649688008654, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
-      propertyPath: m_fontSize
-      value: 36
-      objectReference: {fileID: 0}
-    - target: {fileID: 8305849649688008654, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 36
+    - target: {fileID: 8391830140301344688, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8796044830170341022, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
       propertyPath: m_text
-      value: Answer b
-      objectReference: {fileID: 0}
-    - target: {fileID: 8796044830170341022, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
-      propertyPath: m_fontSize
-      value: 36
-      objectReference: {fileID: 0}
-    - target: {fileID: 8796044830170341022, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 36
+      value: Does f(x) have a point of inflection at x = 3 (yes/no)?
       objectReference: {fileID: 0}
     - target: {fileID: 8893091923008550117, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 557321e8c2fbbfd41ab92a31a6dc6f8f, type: 3}
+      objectReference: {fileID: 21300000, guid: df2761809e6117c4cb28527bef919589, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

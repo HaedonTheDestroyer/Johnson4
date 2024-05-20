@@ -105,6 +105,10 @@ public class MathButton : MonoBehaviour
 
         if (QuestionManager.AllCorrect())
         {
+            for(int i = 0; i < 4; i++)
+            {
+                QuestionManager.questions[i] = false;
+            }
             correctText.SetActive(true);
             Invoke(nameof(LoadNext), 1f);
         }
