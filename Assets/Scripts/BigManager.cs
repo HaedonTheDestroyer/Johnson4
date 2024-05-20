@@ -10,6 +10,9 @@ public class BigManager : MonoBehaviour
 
     public AudioMixer audioMixer;
 
+    public bool paused;
+    public bool answering;
+
     private void Start(){
         audioMixer.SetFloat("MusicVolume", Mathf.Log10(PlayerPrefs.GetFloat("musicvol")) * 20);
         audioMixer.SetFloat("SoundVolume", Mathf.Log10(PlayerPrefs.GetFloat("soundvol")) * 20);

@@ -182,7 +182,7 @@ MonoBehaviour:
   power: 100
   radius: 3
   ups: 2
-  bulletspeed: 15
+  bulletspeed: 20
   maxspeed: 100
   timebetweenattacks: 0.5
   sightrange: 400

@@ -39,12 +39,12 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.Escape))
-        {
-            SceneManager.LoadScene("level select");
-        }
         if (Input.GetKey(KeyCode.R))
         {
+            if (BigManager.instance.paused)
+            {
+                return;
+            }
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         if (playerHealth <= 0&&!gameEnd) {
