@@ -24,6 +24,14 @@ public class MathButton : MonoBehaviour
     private void Start()
     {
         meshRenderer = GetComponent<MeshRenderer>();
+
+        if (answer.Contains("/"))
+        {
+            double numerator, denominator;
+            double.TryParse(answer.Substring(0, answer.IndexOf("/")), out numerator);
+            double.TryParse(answer.Substring(answer.IndexOf("/") + 1), out denominator);
+            answer = "" + (numerator / denominator);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -58,10 +66,24 @@ public class MathButton : MonoBehaviour
         }
 
         string ans = inputField.text.ToString().ToLower();
+
+        if(ans.Length == 0)
+        {
+            return;
+        }
+
         answer = answer.ToLower();
 
         ans = ans.Replace(" ", "");
         answer = answer.Replace(" ", "");
+
+        if (ans.Contains("/"))
+        {
+            double numerator, denominator;
+            double.TryParse(ans.Substring(0, ans.IndexOf("/")), out numerator);
+            double.TryParse(ans.Substring(ans.IndexOf("/") + 1), out denominator);
+            ans = "" + (numerator / denominator);
+        }
 
         inputField.text = "";
 
