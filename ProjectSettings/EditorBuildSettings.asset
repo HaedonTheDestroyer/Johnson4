@@ -114,7 +114,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 15.unity
     guid: 9a13679a9372fef489070d79bc932a3c
   - enabled: 1
-    path: Assets/Scenes/Level 15 Math.unity
-    guid: 97d18c7f3ea6f2e4f9a84b50feafe0e1
+    path: Assets/Scenes/WAKE UP.unity
+    guid: fdbfd69243cf73441960491801b02298
   m_configObjects: {}
-  m_UseUCBPForAssetBundles: 0

@@ -16,15 +16,20 @@ public class MathButton : MonoBehaviour
     public GameObject correctText;
     public string answer;
     public int questionNumber;
-
+     GameObject opp;
+     GameObject cube;
+    ColorChanger changer;
     public TMP_InputField inputField;
 
     public AudioSource audioSource;
 
     private void Start()
     {
-        meshRenderer = GetComponent<MeshRenderer>();
+        changer = FindAnyObjectByType<ColorChanger>();
 
+        meshRenderer = GetComponent<MeshRenderer>();
+        opp= changer.opp;
+        cube = changer.cube;
         if (answer.Contains("/"))
         {
             double numerator, denominator;
@@ -36,25 +41,28 @@ public class MathButton : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        incorrectText.SetActive(false);
-
-        if (QuestionManager.questions[questionNumber - 1])
+        if (other.tag == "Player")
         {
-            return;
+            incorrectText.SetActive(false);
+
+            if (QuestionManager.questions[questionNumber - 1])
+            {
+                return;
+            }
+
+            gameUI.SetActive(false);
+            question.SetActive(true);
+
+            audioSource.Pause();
+
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+
+            Time.timeScale = 0f;
+
+            BigManager.instance.answering = true;
+            BigManager.instance.paused = true;
         }
-
-        gameUI.SetActive(false);
-        question.SetActive(true);
-
-        audioSource.Pause();
-
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
-
-        Time.timeScale = 0f;
-
-        BigManager.instance.answering = true;
-        BigManager.instance.paused = true;
     }
 
     public void QuestionAnswered()
@@ -121,6 +129,7 @@ public class MathButton : MonoBehaviour
         {
             incorrectText.SetActive(true);
             Invoke(nameof(sunfish), 1f);
+            
         }
 
         QuestionManager.questions[questionNumber - 1] = correct;
@@ -139,6 +148,18 @@ public class MathButton : MonoBehaviour
     private void sunfish()
     {
         incorrectText.SetActive(false);
+        if (Random.Range(-1 , 2) != 1)
+        {
+            for (int i = 0; i < 25; i++) { Instantiate(opp, new Vector3(Random.Range(-40, 45), 1.5f, Random.Range(-40, 45)), new Quaternion()); }
+        }
+        else
+        {
+            Instantiate(cube, new Vector3(Random.Range(-40, 45), 1.5f, Random.Range(-40, 45)), new Quaternion());
+            Instantiate(cube, new Vector3(Random.Range(-40, 45), 1.5f, Random.Range(-40, 45)), new Quaternion());
+        }
+
+       
+        
     }
 
     private void LoadNext()

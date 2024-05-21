@@ -11,6 +11,9 @@ public class ColorChanger : MonoBehaviour
     public MeshRenderer m3;
     public float bpm;
     public int steps;
+    public GameObject opp;
+    public GameObject cube;
+   
     public void color1()
     {
         m3.material=m1;

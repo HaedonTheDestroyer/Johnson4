@@ -123,3 +123,5 @@ MonoBehaviour:
   m3: {fileID: 8137790166518113447}
   bpm: 140
   steps: 1
+  opp: {fileID: 7719430354857170289, guid: ce9ee5ade707ef34096843a116f683b2, type: 3}
+  cube: {fileID: 1799035032609930111, guid: 814adefaf0ef55c4c994a06a41bb6777, type: 3}

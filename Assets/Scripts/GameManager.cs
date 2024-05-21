@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.Experimental.GlobalIllumination;
 using UnityEngine.SceneManagement;
@@ -15,6 +16,7 @@ public class GameManager : MonoBehaviour
     bool gameEnd;
     GameObject l;
     AudioSource a;
+    bool hasa = true;
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -25,7 +27,14 @@ public class GameManager : MonoBehaviour
         gameEnd = false;
         bar.GetComponent<Slider>().value = playerHealth;
         l = GameObject.Find("Directional Light");
-        a=player.GetComponent<AudioSource>();
+        if (player.GetComponent<AudioSource>() == null)
+        {
+            hasa = false;
+        }
+        else
+        {
+            a = player.GetComponent<AudioSource>();
+        }
     }
     public void endGame()
     {
@@ -48,7 +57,8 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
         if (playerHealth <= 0&&!gameEnd) {
-            a.enabled = false;
+            if (hasa)
+                a.enabled = false;
             l.SetActive(false);
             gameEnd = true;
             m.enabled = false;

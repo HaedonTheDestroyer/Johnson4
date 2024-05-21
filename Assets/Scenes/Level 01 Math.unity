@@ -67,6 +67,9 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 1
@@ -1221,6 +1224,8 @@ MonoBehaviour:
   correctText: {fileID: 1941513766}
   answer: -1
   questionNumber: 4
+  opp: {fileID: 7719430354857170289, guid: ce9ee5ade707ef34096843a116f683b2, type: 3}
+  cube: {fileID: 1799035032609930111, guid: 814adefaf0ef55c4c994a06a41bb6777, type: 3}
   inputField: {fileID: 2144264254}
   audioSource: {fileID: 1247884837}
 --- !u!1 &859218176
@@ -1347,6 +1352,8 @@ MonoBehaviour:
   correctText: {fileID: 1941513766}
   answer: 2
   questionNumber: 1
+  opp: {fileID: 7719430354857170289, guid: ce9ee5ade707ef34096843a116f683b2, type: 3}
+  cube: {fileID: 1799035032609930111, guid: 814adefaf0ef55c4c994a06a41bb6777, type: 3}
   inputField: {fileID: 468837774}
   audioSource: {fileID: 1247884837}
 --- !u!1 &865188054
@@ -1509,6 +1516,8 @@ MonoBehaviour:
   correctText: {fileID: 1941513766}
   answer: -1
   questionNumber: 2
+  opp: {fileID: 7719430354857170289, guid: ce9ee5ade707ef34096843a116f683b2, type: 3}
+  cube: {fileID: 1799035032609930111, guid: 814adefaf0ef55c4c994a06a41bb6777, type: 3}
   inputField: {fileID: 1833921398}
   audioSource: {fileID: 1247884837}
 --- !u!1 &1082888345
@@ -1657,27 +1666,27 @@ PrefabInstance:
       value: Answer Question 1 Below
       objectReference: {fileID: 0}
     - target: {fileID: 3864685576934728417, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
-      propertyPath: 'audioSources.Array.data[0]'
+      propertyPath: audioSources.Array.data[0]
       value: 
       objectReference: {fileID: 1247884837}
     - target: {fileID: 3864685576934728417, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
-      propertyPath: 'audioSources.Array.data[1]'
+      propertyPath: audioSources.Array.data[1]
       value: 
       objectReference: {fileID: 1927192797}
     - target: {fileID: 3864685576934728417, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
-      propertyPath: 'audioSources.Array.data[2]'
+      propertyPath: audioSources.Array.data[2]
       value: 
       objectReference: {fileID: 2265282199387928680}
     - target: {fileID: 3864685576934728417, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
-      propertyPath: 'audioSources.Array.data[3]'
+      propertyPath: audioSources.Array.data[3]
       value: 
       objectReference: {fileID: 1942227986}
     - target: {fileID: 3864685576934728417, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
-      propertyPath: 'audioSources.Array.data[4]'
+      propertyPath: audioSources.Array.data[4]
       value: 
       objectReference: {fileID: 1751982693}
     - target: {fileID: 3864685576934728417, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
-      propertyPath: 'audioSources.Array.data[5]'
+      propertyPath: audioSources.Array.data[5]
       value: 
       objectReference: {fileID: 115497937}
     - target: {fileID: 4305310127876792247, guid: 711e629e368d0544ebf336b844c85f56, type: 3}
@@ -2307,6 +2316,8 @@ MonoBehaviour:
   correctText: {fileID: 1941513766}
   answer: dne
   questionNumber: 3
+  opp: {fileID: 7719430354857170289, guid: ce9ee5ade707ef34096843a116f683b2, type: 3}
+  cube: {fileID: 1799035032609930111, guid: 814adefaf0ef55c4c994a06a41bb6777, type: 3}
   inputField: {fileID: 744402053}
   audioSource: {fileID: 1247884837}
 --- !u!1 &1786661270 stripped

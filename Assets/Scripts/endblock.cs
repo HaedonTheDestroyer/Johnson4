@@ -65,7 +65,7 @@ public class endblock : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }else if (maze)
         {
-            SceneManager.LoadScene("Main Menu");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 }
